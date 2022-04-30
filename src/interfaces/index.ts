@@ -1,1 +1,1 @@
-export * from './ICoords'
+export {}
