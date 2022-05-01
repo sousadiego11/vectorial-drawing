@@ -1,12 +1,12 @@
 import mapboxgl from 'mapbox-gl';
 import React, { Ref, useEffect, useRef } from 'react';
-import { environment } from './utils/environment';
-import { mapRef } from './components';
+import { environment } from '../utils/environment';
+import { mapRef } from '.';
 import { StyledContainer } from './styles';
  
 mapboxgl.accessToken = environment.VITE_MAPBOX_KEY;
 
-function App() {
+export function App() {
   const mapContainer: Ref<any> = useRef(null)
 
   useEffect(() => {
@@ -19,5 +19,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
