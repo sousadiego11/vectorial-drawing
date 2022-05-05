@@ -13,6 +13,10 @@ export class Map {
   getFeatures(): GeoJSON.FeatureCollection {
     return this.features
   }
+  
+  getDraw(): MapboxDraw {
+    return this.draw
+  }
 
   initialize(container: any) {
     mapboxgl.accessToken = environment.VITE_MAPBOX_KEY;
