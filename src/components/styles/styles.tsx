@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const StyledContainer = styled.div`
-  height: 100vh;
+  position: absolute;
+  top: 0;
+  bottom: 0;
   width: 100%;
-  padding: 0;
-  margin: 0;
 `;
